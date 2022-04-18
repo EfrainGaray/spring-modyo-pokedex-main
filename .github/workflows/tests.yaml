@@ -3,7 +3,7 @@ name: Master - Testing
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 jobs:
 
   artifact:
