@@ -6,16 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ChallengeApplication {
 
-
-	private int value;
-	public void sum(int aNumber, int anotherNumber){
-		value = aNumber + anotherNumber;
-	}
-	public void subtract(int aNumber, int anotherNumber) {
-		value = aNumber - anotherNumber;
+	public static void main(String[] args) {
+		SpringApplication.run(ChallengeApplication.class, args);
 	}
 
-	public int currentValue(){
-		return value;
-	}
+
 }
