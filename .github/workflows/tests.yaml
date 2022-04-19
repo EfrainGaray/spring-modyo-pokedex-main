@@ -1,4 +1,4 @@
-name: Master - Testing
+name: Main - Testing
 
 on:
   push:
