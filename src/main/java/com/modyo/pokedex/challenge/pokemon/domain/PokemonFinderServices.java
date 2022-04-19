@@ -1,18 +1,16 @@
 package com.modyo.pokedex.challenge.pokemon.domain;
 
-import com.modyo.pokedex.challenge.pokemon.infrastucture.PokemonFinderRepository;
+import com.modyo.pokedex.challenge.pokemon.infrastucture.PokemonRepository;
 import org.springframework.stereotype.Service;
-
-import java.io.Serializable;
 
 @Service
 public class PokemonFinderServices {
-    private PokemonFinderRepository pokemonFinderRepository;
-    PokemonFinderServices (PokemonFinderRepository pokemonFinderRepository){
-        this.pokemonFinderRepository = pokemonFinderRepository;
+    private PokemonRepository pokemonRepository;
+    PokemonFinderServices (PokemonRepository pokemonRepository){
+        this.pokemonRepository = pokemonRepository;
     }
     public PokemonResponseData pokemonFinder(String name){
-        return pokemonFinderRepository.finderPokemon(name);
+        return pokemonRepository.finderPokemon(name);
     }
 
 }
