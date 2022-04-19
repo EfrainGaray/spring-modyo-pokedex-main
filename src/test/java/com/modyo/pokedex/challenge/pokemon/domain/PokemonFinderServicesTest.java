@@ -1,7 +1,7 @@
 package com.modyo.pokedex.challenge.pokemon.domain;
 
 
-import com.modyo.pokedex.challenge.pokemon.infrastucture.PokemonFinderRepository;
+import com.modyo.pokedex.challenge.pokemon.infrastucture.PokemonRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +14,7 @@ public class PokemonFinderServicesTest {
 
 
     @Autowired
-    private PokemonFinderRepository pokemonFinderRepository;
+    private PokemonRepository pokemonFinderRepository;
     @Test
     void contextLoads(){
         PokemonFinderServices pokeServices = new PokemonFinderServices(pokemonFinderRepository);
