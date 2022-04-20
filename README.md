@@ -23,6 +23,9 @@ Demo api in spring and front end in svelte:
 - [Svelte](https://svelte.dev/) - https://challenge-pokedex.surge.sh/
   - It lives at the repository:  https://github.com/EfrainGaray/svelte-modjo-pokedex-pagination
 
+## Postman 
+- [Documentation](https://documenter.getpostman.com/view/7215252/Uyr8kd4t)
+- [Workspace](https://www.postman.com/grey-trinity-131844/workspace/challenge-pokedex/request/7215252-e74d5146-2793-4808-82a0-2c2e37be9db9)
 
 ## Docker
 
