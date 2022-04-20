@@ -19,7 +19,9 @@
 Demo api in spring and front end in svelte:
 
 - [Spring Boot](https://spring.io/) - https://api.modyo.pokedex.hegga.tech/pokemon
+  - It lives at the repository: https://github.com/EfrainGaray/spring-modyo-pokedex-main
 - [Svelte](https://svelte.dev/) - https://challenge-pokedex.surge.sh/
+  - It lives at the repository:  https://github.com/EfrainGaray/svelte-modjo-pokedex-pagination
 
 
 ## Docker
@@ -44,8 +46,6 @@ port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
 docker run -d -p 8000:8080 --restart=always --name=pokedex-challenge spring-modyo-pokedex-main
 ```
 
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
 Verify the deployment by navigating to your server address in
 your preferred browser.
 
@@ -53,9 +53,12 @@ your preferred browser.
 http://localhost:8000/pokemon
 ```
 
-## Deploy
+## Deploy workflow
 
-Deploy in aws with githubactions ecr, ecs.
+Deploy in aws with githubactions.
+
+services used route53, ec2 load balance, Certificate Manager, Elastic Container Registry and
+Elastic Container Service
 
 workflow
 ```yaml

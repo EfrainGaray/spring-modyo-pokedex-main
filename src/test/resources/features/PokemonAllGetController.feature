@@ -1,6 +1,4 @@
-Feature: Pokemon finder for name
-  Get each pokemon by its name obtaining its basic information
-  type, weight, ability and photo
+Feature: Get all Pokemon and create pagination items
 
   Scenario: Get all pokemon
     Given I send name a request to the URL "/pokemon?offset=120&limit=20"
